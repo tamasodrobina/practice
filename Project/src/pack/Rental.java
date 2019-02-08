@@ -21,11 +21,10 @@ public class Rental {
 			if(day<=box.getMaxDay()) {
 			Customer customer=new Customer(ticket, day, name);
 			box.addList(customer);	
-			box.toStringBoxList();
-			System.out.println("Ticket: " + ticket + " price: "+box.price(ticket));
+			System.out.println("\nTicket: " + ticket + " price: "+box.price(ticket)+ "\n");
 			}
 			else
-				System.out.println("Wrong days ( Max: 3 min: 1)");
+				System.out.println("\nWrong days ( Max: 3 min: 1)\n");
 	 }
 	 
 	 
