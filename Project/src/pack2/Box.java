@@ -1,13 +1,15 @@
-package pack;
+package pack2;
 
 
 import java.util.ArrayList;
+
+
 
 public class Box {
 	private int rentPrice=100;
 	private int maxDay=3;
 	private int maxSpace=5;
-	private Customer customer;
+	
 	
 	
 
@@ -77,10 +79,13 @@ public class Box {
 	}
 
 	int fine(int ticket, int endDay) {
-		if(customer.getDays()<endDay)
-		return (endDay-customer.getDays())*rentPrice*3;
-		else 
-			return 0;
+		for (Customer customer : boxList) {
+			if (customer.getTicket() == ticket) {
+				return (endDay-customer.getDays())*rentPrice*3;
+			}
+		}
+		
+		return 0;
 	}
 
 

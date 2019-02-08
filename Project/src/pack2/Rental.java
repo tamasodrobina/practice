@@ -1,4 +1,4 @@
-package pack;
+package pack2;
 
 public class Rental {
 	
@@ -27,5 +27,10 @@ public class Rental {
 			else
 				System.out.println("Wrong days ( Max: 3 min: 1)");
 	 }
+	 
+	 
+
+		
+
 
 }

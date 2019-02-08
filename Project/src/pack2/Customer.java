@@ -1,4 +1,4 @@
-package pack;
+package pack2;
 
 public class Customer {
 
