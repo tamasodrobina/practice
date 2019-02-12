@@ -68,24 +68,22 @@ public class Box {
 		return maxSpace;
 	}
 
-	int price(int ticket) {
-		for (Customer customer : boxList) {
-			if (customer.getTicket() == ticket) {
-				return customer.getDays() * rentPrice;
-			}
-		}
-		return 0;
+	int price(int day) {
+		
+		return day*rentPrice;
 
 	}
 
 	int fine(int ticket, int endDay) {
+		int fineprice=0;
+		
 		for (Customer customer : boxList) {
 			if (customer.getTicket() == ticket) {
-				return (endDay-customer.getDays())*rentPrice*3;
+				fineprice=(endDay-customer.getDays())*rentPrice*3;
 			}
 		}
 		
-		return 0;
+		return fineprice;
 	}
 
 

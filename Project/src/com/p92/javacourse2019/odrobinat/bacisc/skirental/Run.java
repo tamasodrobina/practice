@@ -9,6 +9,7 @@ public class Run {
 	void outPut(String string) {
 		System.out.println(string);
 	}
+	
 
 	void run() throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -18,6 +19,7 @@ public class Run {
 			while (true) {
 
 				int ticket = new Ticket().generate(rental.box.getMaxSpace());
+				
 				outPut("1. Rent \n" + "2. Pay \n" + "3. FreeSpace \n" + "4. Exit\n");
 				int chosen = Integer.parseInt(br.readLine());
 
