@@ -1,4 +1,4 @@
-package pack;
+package com.p92.javacourse2019.odrobinat.bacisc.skirental;
 
 public class Customer {
 
@@ -26,7 +26,7 @@ public class Customer {
 		return name;
 	}
 
-	@Override
+	
 	public String toString() {
 		return "Name: " + name + ", days: " + day + ", ticket: " + ticket + "\n";
 	}

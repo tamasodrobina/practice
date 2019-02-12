@@ -1,4 +1,4 @@
-package pack;
+package com.p92.javacourse2019.odrobinat.bacisc.skirental;
 
 public class Rental {
 	
@@ -8,7 +8,7 @@ public class Rental {
 
 	
 	boolean freeSpace() {
-	if(box.listSize()==box.getMaxDay()) 
+	if(box.listSize()==box.getMaxSpace()) 
 		return false;
 	else
 			return true;

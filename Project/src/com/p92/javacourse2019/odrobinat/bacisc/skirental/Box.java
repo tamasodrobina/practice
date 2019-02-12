@@ -1,4 +1,4 @@
-package pack;
+package com.p92.javacourse2019.odrobinat.bacisc.skirental;
 
 
 import java.util.ArrayList;
@@ -36,10 +36,10 @@ public class Box {
 		return boxList.size();
 	}
 
-	 void removelist(int number) {
+	 void removelist(int ticket) {
 		int i = 0;
 		for (Customer cutomer : boxList) {
-				if (cutomer.getTicket() == number) {
+				if (cutomer.getTicket() == ticket) {
 					boxList.remove(i);
 					System.out.println("Your box is open.\n");
 					break;

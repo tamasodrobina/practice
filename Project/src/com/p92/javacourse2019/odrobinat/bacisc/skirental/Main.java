@@ -1,4 +1,4 @@
-package pack;
+package com.p92.javacourse2019.odrobinat.bacisc.skirental;
 
 import java.io.IOException;
 
